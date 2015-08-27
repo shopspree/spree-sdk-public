@@ -1,11 +1,11 @@
-# Spree Widget (wow)
+# Spree Widget
 
 ## User guide
 
 The Spree widget contains video content and product page links that can be embedded onto your site. It is adaptive to site space requirements, responsive, and controlled through plain CSS definition. You can control the type of content the widget displays by setting a tag parameter on the widget.
 
 
-### Get started
+### Geting started
 
 To embed the widget on your website:
 
