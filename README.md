@@ -24,30 +24,9 @@ To embed the widget on your website:
 
 This `div` element will contain the widget once the page loads.
 
-- To determine the widget dimensions, and how they change in response to screen dimensions changes include the `spree-wow.css` and `spree-wow-ie8.css` files as stylesheets in the  web page. The files are provided with this SDK, to get them:
-
-1. Download this SDK from  [here](https://github.com/shopspree/spree-wow-public/archive/master.zip).
-2. Extract the downloaded archive file to a folder. 
-3. The `spree-wow.css` and `spree-wow-ie8.css` will be in the `Sample-wow` subfolder of the SDK folder.
-4. Copy them to your website, where you hold stylesheet files
-
-Now they are ready for reference from within the web page. To support IE8 you will have to include a condition to choose between them. The end result should look like this:
-
-````javascript
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" type="text/css" href="spree-wow-ie8.css" media="all">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" type="text/css" href="spree-wow.css" media="all">
-    <!--<![endif]-->
-````
-
-*(note that the css references exact location is dependent on where you placed them in relation to the web page)*
-
 **The widget is now ready for operation!**   
 
 You can review the examples to see how the end result should look like:   
-In [Sample-wow](https://github.com/shopspree/spree-wow-public/tree/master/Sample-wow) you can find an example of how to introduce the tags into the WOW index web page. Review `index.html` to see how it adds the `div` element, spree SDK javascript reference and the stylesheets.
 In [Sample-generic](https://github.com/shopspree/spree-wow-public/tree/master/Sample-generic) you can find a generic example of how to include the widget, with a minimal web page. You will note that this webpage embeds the relevant stylesheets instead of referring to them.
 
 The next passages explain more about the behavior and options of the widget.
@@ -69,14 +48,14 @@ To implement this use IE conditions. For example consider the following HTML dec
 
 ````javascript
     <!--[if lte IE 8]>
-    <link rel="stylesheet" type="text/css" href="spree-wow-ie8.css" media="all">
+    <link rel="stylesheet" type="text/css" href="spree-ie8.css" media="all">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" type="text/css" href="spree-wow.css" media="all">
+    <link rel="stylesheet" type="text/css" href="spree.css" media="all">
     <!--<![endif]-->
 ````
 
-The definition will use `spree-wow-ie8.css` in case of IE8 and `spree-wow.css` in case of anything else. The css for IE8 will probably be according to the largest media in `spree-wow.css`.
+The definition will use `spree-ie8.css` in case of IE8 and `spree.css` in case of anything else. The css for IE8 will probably be according to the largest media in `spree.css`.
 
 ### Widget Attributes
 
