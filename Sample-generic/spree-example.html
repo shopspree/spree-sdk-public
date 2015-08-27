@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        body
+        {
+            margin:15.859375px;
+            padding:0;
+
+        }
+    </style>
+
+    <!--[if lte IE 8]>
+    <style>
+
+        /*
+         special CSS for IE8
+         with no media queries
+         */
+        .spree-root
+        {
+            border: 1px solid #f2f2f2;
+
+            width:900px;
+        }
+
+
+        .spree-widget-open {
+            height: 463px;
+        }
+
+        .spree-widget-close {
+            height:65px;
+
+        }
+    </style>
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <style>
+        /*
+         CSS for all browsers but IE8.
+         Includes media queries to support various media sizes and
+         configuration of spree component placeholder
+         */
+
+
+        .spree-root
+        {
+            border: 1px solid #f2f2f2;
+
+            width:96.874%;
+        }
+
+        .spree-widget-open {
+            height:436px;
+        }
+
+        .spree-widget-close {
+            height:91px;
+
+        }
+
+        @media all and (min-width:375px)
+        {
+            .spree-widget-open
+            {
+                height:457px;
+            }
+
+        }
+
+
+        @media all and (min-width:642px)
+        {
+            .spree-root
+            {
+                width: 602px;
+            }
+
+            .spree-widget-open
+            {
+                height:344px;
+            }
+
+        }
+
+        @media all and (min-width:768px)
+        {
+            .spree-root {
+                width: 728px;
+            }
+
+            .spree-widget-open
+            {
+                height: 406px;
+            }
+        }
+
+        @media all and (min-width:980px)
+        {
+            .spree-root {
+                width: 602px;
+            }
+
+            .spree-widget-open
+            {
+                height:344px;
+            }
+        }
+
+        @media all and (min-width:1280px)
+        {
+            .spree-root {
+                width: 900px;
+            }
+
+            .spree-widget-open
+            {
+                height: 463px;
+            }
+
+            .spree-widget-close {
+                height:65px;
+
+            }
+
+        }
+    
+    </style>
+    <!--<![endif]-->
+
+</head>
+<body>
+    <h1>Spree Widget example page</h1>
+    <!-- The one below should get the spree frame -->
+    <div class="spree-root"></div>
+
+    <!-- The one below includes the script to load the frame -->
+    <script src="https://widgets.shopspree.co/wow/latest/spree-sdk.js"></script>
+
+</body>
+</html>
