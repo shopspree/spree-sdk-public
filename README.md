@@ -37,8 +37,10 @@ The best method to control the widget dimensions is through CSS. simply set the 
 You can use media queries for responsiveness support.
 
 **Note:** By default the widget takes up 100% of the width up to 900 pixels (maximum width).
-The banner view of the widget takes 91 pixels of height, and The expanded view takes 463 pixels of height.
-You can control these dimensions by overriding them in your CSS stylesheet.
+The banner view of the widget takes up to 91 pixels of height, and The expanded view takes up to 463 pixels of height.
+You can control the width of the widget in your CSS stylesheet.
+Setting the width of the widget may cause it to change layout to accommodate the width properly (this is done internally with media queries).
+Height is determined per the specific widget layout.
 To properly view the widget its the width should be no less than 281 pixels.
 
 
